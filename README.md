@@ -34,16 +34,15 @@ customer-churn-ensemble-shap/
 ```
 
 ## Results
+| Model               |  Accuracy | Precision |    Recall |  F1 Score |   ROC-AUC |
+| ------------------- | --------: | --------: | --------: | --------: | --------: |
+| **Voting Ensemble** |     0.772 |     0.557 | **0.690** | **0.616** | **0.834** |
+| Gradient Boosting   |     0.768 |     0.552 |     0.684 |     0.611 |     0.834 |
+| Logistic Regression |     0.732 |     0.497 | **0.778** |     0.607 |     0.833 |
+| XGBoost             | **0.778** |     0.578 |     0.615 |     0.596 |     0.829 |
+| Random Forest       |     0.770 |     0.558 |     0.652 |     0.602 |     0.825 |
+| Stacking Ensemble   | **0.778** | **0.585** |     0.570 |     0.577 |     0.819 |
 
-Model                  Accuracy  Precision  Recall   F1      ROC-AUC
------------------------------------------------------------------------
-Voting Ensemble          0.772     0.557     0.690   0.616    0.834
-Gradient Boosting        0.768     0.552     0.684   0.611    0.834
-Logistic Regression      0.732     0.497     0.778   0.607    0.833
-XGBoost                  0.778     0.578     0.615   0.596    0.829
-Random Forest            0.770     0.558     0.652   0.602    0.825
-Stacking Ensemble        0.778     0.585     0.570   0.577    0.819
------------------------------------------------------------------------
 
 
 ### Top churn drivers (SHAP)
